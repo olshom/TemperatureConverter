@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/olshom/TemperatureConverter.git'
+                git branch: 'main',
+                url: 'https://github.com/olshom/TemperatureConverter.git'
             }
         }
         stage('Build') {
