@@ -1,5 +1,9 @@
 pipeline {
     agent any
+     environment {
+             JAVA_HOME = '/usr/lib/jvm/java-21-openjdk'
+         }
+
     stages {
         stage('Checkout') {
             steps {
