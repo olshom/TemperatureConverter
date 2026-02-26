@@ -2,7 +2,7 @@ pipeline {
     agent any
      environment {
             JAVA_HOME = '/usr/lib/jvm/java-21-openjdk'
-            DOCKERHUB_CREDENTIALS_ID = 'forAmir'
+            DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials'
             DOCKERHUB_REPO = 'olgasho/temperatureconverter'
             DOCKER_IMAGE_TAG = 'latest'
          }
